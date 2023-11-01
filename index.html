@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="title">
+        <div class="heading">
+            <h1>Products</h1>
+        </div>
+        <div class="search-bar">
+            <input id="search-input" type="text">
+            <button id="btn" onclick="search()">Search</button>
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        </div>
+    </div>
+ 
+    <div class="container">
+        <div class="left">
+            <div class="filter-section">
+                <div class="title2">
+                    <h2>Filter</h2>
+                </div>
+
+                
+
+                <div class="price-radio">
+                    <h3>Price</h3>
+                    <label for="all">
+
+                        <input type="radio" name="Price" value='all' checked /> All
+                    </label>
+                    <label for="300">
+                        <input type="radio" name="Price" value='300' /> > 300
+                    </label>
+                    <label for="600">
+                        <input type="radio" name="Price" value='600' /> > 600
+                    </label>
+                    <label for="900">
+                        <input type="radio" name="Price" value='900' /> > 900
+                    </label>
+                </div>
+
+                <div class="sort-by">
+                    <h3>Sort By</h3>
+                   <label for="high"> <input type="radio" name="sort-price" value="high" /> H - l</label>
+                    <label for="low"><input type="radio" name="sort-price" value="low" /> l - H</label>
+                </div>
+
+                <div class="sort-by-categories">
+                    <h3>Sort by Categories</h3>
+                    <label for="men's-clothing"><input type="radio" name="sort-categories" value="mens-clothing" /> Men's clothing</label>
+                    <label for="jewelery"><input type="radio" name="sort-categories" value="jewelery" /> Jewelery</label>
+                    <label for="electronics"><input type="radio" name="sort-categories" value="electronics" /> Electronics</label>
+                    <label for="women's clothing"><input type="radio" name="sort-categories" value="women's clothing" /> Women's clothing</label>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="productContainer">
+
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
